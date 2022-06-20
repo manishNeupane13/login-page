@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Login
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin-left: 30%;
+            margin-right: 30%;
+            background-color: whitesmoke;
+
+        }
+
+
+        form {
+            box-sizing: border-box;
+
+            background-color: #0d163b;
+            border: 4px outset #0d163b;
+            padding: 25px;
+            color: white;
+            text-align: center;
+
+
+
+
+        }
+
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+        }
+
+        .loginletter {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+            font-style: oblique;
+
+        }
+
+
+        input[type=text],
+        input[type=password] {
+            font-size: 16px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: none;
+            color: white;
+            border-bottom: 2px solid purple;
+            background-color: #0d163b;
+            cursor: pointer;
+
+
+        }
+
+        ::placeholder {
+            color: white;
+        }
+
+
+        .submit {
+            background-color: #d982c6;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 80%;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .cancelbtn {
+
+            color: pink;
+            padding: 10px 18px;
+            font-weight: bolder;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: normal;
+            background-color: #85edcc;
+
+
+        }
+
+        .avatar {
+            border-radius: 50%;
+            width: 40%;
+        }
+
+        .containermain {
+            padding: 16px;
+        }
+
+        .btomcontainer {
+            padding-bottom: 25px;
+        }
+
+        .psw {
+            float: right;
+
+        }
+
+        .remember {
+            float: left;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+
+        }
+
+        a:hover {
+            text-decoration: solid;
+            color: tomato;
+        }
+
+        @media only screen and (max-width:1000px) {
+            body {
+                margin-left: 2%;
+                margin-right: 2%;
+
+            }
+
+            form {
+                display: block;
+                text-align: center;
+
+            }
+
+            .submit {
+                width: 60%;
+            }
+
+
+            .cancelbtn {
+                width: 20%;
+            }
+
+            .psw {
+
+                float: right;
+
+            }
+
+            .remember {
+                float: left;
+
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <form action="http://127.0.0.1:5000/signin" method="post">
+        <div class="imgcontainer">
+            <img src="avatar.png" alt="profile pic " title="display pic" class="avatar">
+            <br><br>
+            <span class="loginletter">W E L - C O M E</span>
+        </div>
+        <div class="containermain">
+            <!-- <label for="uname"><b>Username</b></label><br><br> -->
+            <input type="text" placeholder="&#x1f464;&emsp; Username" name="uname">
+            <br><br>
+            <!-- <label for="psw"><b>Passowrd</b></label> -->
+            <br><br>
+            <input type="password" placeholder="&#x1f512;&emsp; Password" name="psw">
+            <br><br>
+        </div>
+
+
+        <div class="btomcontainer">
+
+            <span class="remember"> <input type="checkbox" checked="checked" name="remember" size=10> Remember me
+            </span>
+            <span class="psw"> <a href="#">Forgot password ? </a></span>
+
+
+            <!-- <button type="button" class="cancelbtn">Cancel </button> -->
+
+        </div>
+        <br><br>
+        <button type="submit" class="submit"> Login </button>
+        <br><br>
+        <div class="signupcont">
+            <span class="noaccount">New Visitor</span>
+            <br>
+            <br>
+            <button type="submit" class="cancelbtn"><a href="newregister.php">Start Here </button>
+
+        </div>
+
+
+    </form>
+</body>
+
+</html>

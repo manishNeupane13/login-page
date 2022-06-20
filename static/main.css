@@ -1,0 +1,11 @@
+#sharedata,
+#sharedata tr td,
+#sharedata tr th {
+  border-collapse: collapse;
+  border: 2px solid black;
+  padding: 10px;
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  text-align: center;
+}

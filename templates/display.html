@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+
+    <title>
+       Title page
+    </title>
+    <body>
+        <h1>
+            Share data
+        </h1>
+        <!-- <form action="http://127.0.0.1:5000/share/",method="post">
+        <input type="submit" value="Show stock data"> -->
+
+        
+        <table id="sharedata">
+            <tr>
+                {%for key in result_key%}
+                <th>
+                    {{key}}
+                </th>
+                {%endfor%}
+            </tr>
+            {%for list_val in sharedata1%}
+            <tr>
+                
+                {%for key in result_key%}
+                <td>
+                    
+                    
+                    {{list_val[key]}}
+                    
+                </td>
+                {%endfor%}
+                
+            </tr>
+            {%endfor%}
+            
+        </table>
+    </form>
+
+    </body>
+</head>
